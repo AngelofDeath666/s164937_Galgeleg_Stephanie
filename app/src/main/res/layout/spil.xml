@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spil_frag">
+
+    <Button
+        android:id="@+id/a"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/b"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/c"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/d"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/e"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/d"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/f"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/e"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/g"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="g"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/f"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/h"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a" />
+
+    <Button
+        android:id="@+id/i"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="i"
+        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintTop_toBottomOf="@+id/b" />
+
+    <Button
+        android:id="@+id/j"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="j"
+        app:layout_constraintStart_toEndOf="@+id/i"
+        app:layout_constraintTop_toBottomOf="@+id/c" />
+
+    <Button
+        android:id="@+id/k"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="k"
+        app:layout_constraintStart_toEndOf="@+id/j"
+        app:layout_constraintTop_toBottomOf="@+id/d" />
+
+    <Button
+        android:id="@+id/l"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="l"
+        app:layout_constraintStart_toEndOf="@+id/k"
+        app:layout_constraintTop_toBottomOf="@+id/e" />
+
+    <Button
+        android:id="@+id/m"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="m"
+        app:layout_constraintStart_toEndOf="@+id/l"
+        app:layout_constraintTop_toBottomOf="@+id/f" />
+
+    <Button
+        android:id="@+id/n"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="n"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/m"
+        app:layout_constraintTop_toBottomOf="@+id/g" />
+
+    <Button
+        android:id="@+id/o"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="o"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h" />
+
+    <Button
+        android:id="@+id/p"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="p"
+        app:layout_constraintStart_toEndOf="@+id/o"
+        app:layout_constraintTop_toBottomOf="@+id/i" />
+
+    <Button
+        android:id="@+id/q"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="q"
+        app:layout_constraintStart_toEndOf="@+id/p"
+        app:layout_constraintTop_toBottomOf="@+id/j" />
+
+    <Button
+        android:id="@+id/r"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="r"
+        app:layout_constraintStart_toEndOf="@+id/q"
+        app:layout_constraintTop_toBottomOf="@+id/k" />
+
+    <Button
+        android:id="@+id/s"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="s"
+        app:layout_constraintStart_toEndOf="@+id/r"
+        app:layout_constraintTop_toBottomOf="@+id/l" />
+
+    <Button
+        android:id="@+id/t"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="t"
+        app:layout_constraintStart_toEndOf="@+id/s"
+        app:layout_constraintTop_toBottomOf="@+id/m" />
+
+    <Button
+        android:id="@+id/u"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="u"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/t"
+        app:layout_constraintTop_toBottomOf="@+id/n" />
+
+    <Button
+        android:id="@+id/v"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/o" />
+
+    <Button
+        android:id="@+id/x"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="x"
+        app:layout_constraintStart_toEndOf="@+id/v"
+        app:layout_constraintTop_toBottomOf="@+id/p" />
+
+    <Button
+        android:id="@+id/y"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="y"
+        app:layout_constraintStart_toEndOf="@+id/x"
+        app:layout_constraintTop_toBottomOf="@+id/q" />
+
+    <Button
+        android:id="@+id/z"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="z"
+        app:layout_constraintStart_toEndOf="@+id/y"
+        app:layout_constraintTop_toBottomOf="@+id/r" />
+
+    <Button
+        android:id="@+id/ae"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="æ"
+        app:layout_constraintStart_toEndOf="@+id/z"
+        app:layout_constraintTop_toBottomOf="@+id/s" />
+
+    <Button
+        android:id="@+id/oe"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="ø"
+        app:layout_constraintStart_toEndOf="@+id/ae"
+        app:layout_constraintTop_toBottomOf="@+id/t" />
+
+    <Button
+        android:id="@+id/aa"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#660000"
+        android:ellipsize="none"
+        android:fontFamily="@font/mystery_quest"
+        android:text="å"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/oe"
+        app:layout_constraintTop_toBottomOf="@+id/u" />
+
+    <ImageView
+        android:id="@+id/galge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/galge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="226dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/nosifer"
+        android:text="info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">s164937 Stephanie Awesome Galgeleg</string>
+    <string name="hovedmenu">Hovedmenu</string>
+    <string name="spil">Spil!</string>
+    <string name="hj_lp">Hjælp</string>
+    <string name="drSwitch">DR</string>
+    <string name="regnearkSwitch">Regneark</string>
+    <string name="preferenceFile">PreferenceFile</string>
+    </resources>

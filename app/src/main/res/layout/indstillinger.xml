@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/indstillinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5F0000"
+        android:fontFamily="@font/nosifer"
+        android:text="Indstillinger"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Switch
+        android:id="@+id/drSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#075F01"
+        android:fontFamily="@font/mystery_quest"
+        android:text="DR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#5F0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brugOrd"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <Switch
+        android:id="@+id/regnearkSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5F0000"
+        android:buttonTint="#FFFFFF"
+        android:fontFamily="@font/mystery_quest"
+        android:foregroundTint="#5F0000"
+        android:text="Regneark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#5F0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drSwitch"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/brugOrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mystery_quest"
+        android:text="Brug ord fra:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#5F0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indstillinger"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <Button
+        android:id="@+id/homeIndstillinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#6F0000"
+        android:fontFamily="@font/mystery_quest"
+        android:text="Hjem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regnearkSwitch" />
+</androidx.constraintlayout.widget.ConstraintLayout>
