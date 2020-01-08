@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         GalgeLogicSingleton.getGalgelogic();
         setContentView(R.layout.hovedmenu);
 
-        spilKnap = findViewById(R.id.knap1);
-        hjaelpKnap = findViewById(R.id.knap2);
-        indstillingerKnap = findViewById(R.id.knap3);
+        spilKnap = findViewById(R.id.spil);
+        hjaelpKnap = findViewById(R.id.hjaelp);
+        indstillingerKnap = findViewById(R.id.indstillinger);
         scoreboardKnap = findViewById(R.id.scoreboard);
         title = findViewById(R.id.title1);
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v == findViewById(R.id.knap1)){
+        if (v == findViewById(R.id.spil)){
             spilKnap.setVisibility(View.INVISIBLE);
             hjaelpKnap.setVisibility(View.INVISIBLE);
             indstillingerKnap.setVisibility(View.INVISIBLE);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .add(R.id.Fragment,fragment)
                     .commit();
 
-        }else if (v == findViewById(R.id.knap2)){
+        }else if (v == findViewById(R.id.hjaelp)){
             spilKnap.setVisibility(View.INVISIBLE);
             hjaelpKnap.setVisibility(View.INVISIBLE);
             indstillingerKnap.setVisibility(View.INVISIBLE);
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .add(R.id.Fragment,fragment)
                     .commit();
 
-        }else if (v == findViewById(R.id.knap3)){
+        }else if (v == findViewById(R.id.indstillinger)){
             spilKnap.setVisibility(View.INVISIBLE);
             hjaelpKnap.setVisibility(View.INVISIBLE);
             indstillingerKnap.setVisibility(View.INVISIBLE);
