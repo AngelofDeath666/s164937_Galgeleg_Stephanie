@@ -1,6 +1,5 @@
 package com.example.galgeleg_stephanie;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button spilKnap,hjaelpKnap,indstillingerKnap;
+    Button spilKnap,hjaelpKnap,indstillingerKnap,scoreboardKnap;
     TextView title;
 
 
@@ -25,12 +24,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         spilKnap = findViewById(R.id.knap1);
         hjaelpKnap = findViewById(R.id.knap2);
         indstillingerKnap = findViewById(R.id.knap3);
+        scoreboardKnap = findViewById(R.id.scoreboard);
         title = findViewById(R.id.title1);
 
 
         spilKnap.setOnClickListener(this);
         hjaelpKnap.setOnClickListener(this);
         indstillingerKnap.setOnClickListener(this);
+        scoreboardKnap.setOnClickListener(this);
 
 
 
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             spilKnap.setVisibility(View.INVISIBLE);
             hjaelpKnap.setVisibility(View.INVISIBLE);
             indstillingerKnap.setVisibility(View.INVISIBLE);
+            scoreboardKnap.setVisibility(View.INVISIBLE);
             title.setVisibility(View.INVISIBLE);
 
             Fragment fragment = new Spil_frag();
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             spilKnap.setVisibility(View.INVISIBLE);
             hjaelpKnap.setVisibility(View.INVISIBLE);
             indstillingerKnap.setVisibility(View.INVISIBLE);
+            scoreboardKnap.setVisibility(View.INVISIBLE);
             title.setVisibility(View.INVISIBLE);
 
             Fragment fragment = new Spil_frag();
@@ -71,9 +74,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             spilKnap.setVisibility(View.INVISIBLE);
             hjaelpKnap.setVisibility(View.INVISIBLE);
             indstillingerKnap.setVisibility(View.INVISIBLE);
+            scoreboardKnap.setVisibility(View.INVISIBLE);
             title.setVisibility(View.INVISIBLE);
 
             Fragment fragment = new Indstillinger_frag();
+
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.Fragment,fragment)
+                    .commit();
+
+        }else if (v == findViewById(R.id.scoreboard)) {
+            spilKnap.setVisibility(View.INVISIBLE);
+            hjaelpKnap.setVisibility(View.INVISIBLE);
+            indstillingerKnap.setVisibility(View.INVISIBLE);
+            scoreboardKnap.setVisibility(View.INVISIBLE);
+            title.setVisibility(View.INVISIBLE);
+
+            Fragment fragment = new ScoreBoard_frag();
 
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.Fragment,fragment)

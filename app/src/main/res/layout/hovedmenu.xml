@@ -7,18 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <FrameLayout
         android:id="@+id/Fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-    </FrameLayout>
-
-
-
-
-
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-134dp"
+        tools:layout_editor_absoluteY="-303dp" />
 
     <Button
         android:id="@+id/knap2"
@@ -67,6 +62,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title1"
         app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#380000"
+        android:fontFamily="@font/mystery_quest"
+        android:text="Scoreboard"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
 
     <TextView
         android:id="@+id/title1"

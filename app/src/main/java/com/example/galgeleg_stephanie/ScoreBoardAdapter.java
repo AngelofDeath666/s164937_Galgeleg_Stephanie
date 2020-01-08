@@ -3,26 +3,31 @@ package com.example.galgeleg_stephanie;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class ScoreBoardAdapter extends RecyclerView.Adapter<ScoreBoardAdapter.ScoreBoardViewHolder> {
-    private ArrayList<HighScores> sbList;
+    private ArrayList<ScoreBoardArray> sbList;
     private String sbaname;
-    private int sbatries;
+    private String sbatries;
 
     public static class ScoreBoardViewHolder extends RecyclerView.ViewHolder {
+        public TextView sbaName;
+        public TextView sbaTries;
 
         public ScoreBoardViewHolder(View itemView) {
             super(itemView);
+            sbaName = itemView.findViewById(R.id.names);
+            sbaTries = itemView.findViewById(R.id.tries);
 
-            //add findViev.By.Id here
-            //variable = item.View.findViewByID(R.ID.x)
+
         }
     }
 
-    public ScoreBoardAdapter(ArrayList<HighScores> scoreBoardList) {
+    public ScoreBoardAdapter(ArrayList<ScoreBoardArray> scoreBoardList) {
         sbList = scoreBoardList;
 
     }
@@ -36,14 +41,16 @@ public class ScoreBoardAdapter extends RecyclerView.Adapter<ScoreBoardAdapter.Sc
 
     @Override
     public void onBindViewHolder(ScoreBoardViewHolder holder, int position) {
-        HighScores currentScore = sbList.get(position);
+        ScoreBoardArray currentScore = sbList.get(position);
 
-        holder.
+        holder.sbaName.setText(currentScore.getSbName());
+        holder.sbaTries.setText(currentScore.getSbTries());
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return sbList.size();
     }
 }
