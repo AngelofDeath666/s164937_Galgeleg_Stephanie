@@ -20,38 +20,37 @@ public class ScoreBoard_frag extends Fragment implements View.OnClickListener {
     private RecyclerView.Adapter sbAdapter;
     private RecyclerView.LayoutManager sbLayoutManager;
     private Button home;
-    private String sharedPref, spiller1, spiller2, spiller3, score1, score2, score3;
+    private String sharedPref;
 
 
     @Override
     public View onCreateView(LayoutInflater iii, ViewGroup container, Bundle savedInstanceState) {
         scoreboard = iii.inflate(R.layout.score_board,container,false);
-        //super.onCreate(savedInstanceState);
 
         home = scoreboard.findViewById(R.id.homeScoreboard);
-
-        ArrayList<ScoreBoardArray> sbList = new ArrayList<>();
-        //sbList.add(new ScoreBoardArray("Johan","2"));
-        //sbList.add(new ScoreBoardArray("Stephanie","4"));
+        home.setOnClickListener(this);
 
         sbRecyclerView = scoreboard.findViewById(R.id.recyclerVeiw);
+
+        ArrayList<ScoreBoardArray> sbList = new ArrayList<>();
+
+        sharedPref = getString(R.string.preferenceFile);
+        SharedPreferences mySharedPreferences = getActivity().getSharedPreferences(sharedPref, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = mySharedPreferences.edit();
+        sbList.add(new ScoreBoardArray(mySharedPreferences.getString(getString(R.string.spiller1),"n/a"), "Forkerte gæt: " + mySharedPreferences.getString(getString(R.string.score1), "n/a")));
+        sbList.add(new ScoreBoardArray(mySharedPreferences.getString(getString(R.string.spiller2),"n/a"), "Forkerte gæt: " + mySharedPreferences.getString(getString(R.string.score2), "n/a")));
+        sbList.add(new ScoreBoardArray(mySharedPreferences.getString(getString(R.string.spiller3),"n/a"), "Forkerte gæt: " + mySharedPreferences.getString(getString(R.string.score3), "n/a")));
+
+        //sbRecyclerView = scoreboard.findViewById(R.id.recyclerVeiw);
         sbRecyclerView.setHasFixedSize(true);
         sbLayoutManager = new LinearLayoutManager(scoreboard.getContext());
         sbAdapter = new ScoreBoardAdapter(sbList);
 
+
         sbRecyclerView.setLayoutManager(sbLayoutManager);
         sbRecyclerView.setAdapter(sbAdapter);
-        home.setOnClickListener(this);
 
-        sharedPref = getString(R.string.preferenceFile);
-        spiller1 = getString(R.string.spiller1);
-        spiller2 = getString(R.string.spiller2);
-        spiller3 = getString(R.string.spiller3);
-        score1 = getString(R.string.score1);
-        score2 = getString(R.string.score2);
-        score3 = getString(R.string.score3);
 
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences(sharedPref, Context.MODE_PRIVATE);
 
         return scoreboard;
 

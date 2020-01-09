@@ -11,8 +11,7 @@ import java.util.ArrayList;
 
 public class ScoreBoardAdapter extends RecyclerView.Adapter<ScoreBoardAdapter.ScoreBoardViewHolder> {
     private ArrayList<ScoreBoardArray> sbList;
-    private String sbaname;
-    private String sbatries;
+
 
     public static class ScoreBoardViewHolder extends RecyclerView.ViewHolder {
         public TextView sbaName;
@@ -20,7 +19,7 @@ public class ScoreBoardAdapter extends RecyclerView.Adapter<ScoreBoardAdapter.Sc
 
         public ScoreBoardViewHolder(View itemView) {
             super(itemView);
-            sbaName = itemView.findViewById(R.id.names);
+            sbaName = itemView.findViewById(R.id.high_names);
             sbaTries = itemView.findViewById(R.id.tries);
 
 

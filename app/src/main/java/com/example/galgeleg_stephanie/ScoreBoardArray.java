@@ -8,8 +8,8 @@ public class ScoreBoardArray extends AppCompatActivity {
     private String sbTries;
 
     public ScoreBoardArray(String name, String tries){
-        sbName = name;
-        sbTries = tries;
+        this.sbName = name;
+        this.sbTries = tries;
     }
 
     public String getSbName(){

@@ -7,12 +7,20 @@ import java.util.ArrayList;
 
 public class GalgeLogicSingleton  {
     private static Galgelogik singleton;
+    private static boolean gameRunning = false;
     public static Galgelogik getGalgelogic(){
         if (singleton == null) {
             singleton = new Galgelogik();
 
+
         }
         return singleton;
+
+    }
+
+    public static void nustil(){
+        singleton.nulstil();
+        gameRunning = false;
 
     }
 
