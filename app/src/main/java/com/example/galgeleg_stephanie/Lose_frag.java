@@ -40,6 +40,7 @@ public class Lose_frag extends Fragment implements View.OnClickListener {
         getActivity().findViewById(R.id.spil).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.hjaelp).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.indstillinger).setVisibility(View.VISIBLE);
+        getActivity().findViewById(R.id.scoreboard).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.title1).setVisibility(View.VISIBLE);
 
 

@@ -1,5 +1,7 @@
 package com.example.galgeleg_stephanie;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,6 +21,7 @@ public class Win_frag extends Fragment implements View.OnClickListener {
     private View youWin;
     TextView attempts,winnerWord;
     Button homeWon;
+    String sharedPref, name, score;
 
     @Override
     public View onCreateView(LayoutInflater i, ViewGroup container, Bundle savedInstanceState) {
@@ -31,6 +34,14 @@ public class Win_frag extends Fragment implements View.OnClickListener {
 
         winnerWord.setText("Du har vundet. Ordet var: " + getArguments().getString("theCorrectWord"));
         attempts.setText("Antal forsøg: " + getArguments().getString("attempts"));
+        name = getArguments().getString("attempts");
+
+        sharedPref = getString(R.string.preferenceFile);
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences(sharedPref, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(name);
+        editor.commit();
+
 
         final KonfettiView konfettiView = youWin.findViewById(R.id.viewKonfetti);
 
@@ -60,6 +71,7 @@ public class Win_frag extends Fragment implements View.OnClickListener {
         getActivity().findViewById(R.id.spil).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.hjaelp).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.indstillinger).setVisibility(View.VISIBLE);
+        getActivity().findViewById(R.id.scoreboard).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.title1).setVisibility(View.VISIBLE);
 
 
